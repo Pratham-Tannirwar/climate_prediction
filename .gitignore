@@ -40,11 +40,14 @@ venv.bak/
 climate_data.db
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
 *~
+
+# VS Code - keep configuration files for project setup
+# .vscode/ folder and workspace file are included in repo
+# Only ignore user-specific VS Code settings if any
 
 # OS
 .DS_Store

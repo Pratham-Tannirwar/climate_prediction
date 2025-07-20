@@ -1,0 +1,43 @@
+### Climate Prediction API Tests
+### Use with VS Code REST Client extension
+
+@baseUrl = http://localhost:5000
+
+### Test main page
+GET {{baseUrl}}/
+
+### Test weather endpoint - London
+GET {{baseUrl}}/api/weather/London
+
+### Test weather endpoint - New York
+GET {{baseUrl}}/api/weather/New York
+
+### Test weather endpoint - Tokyo
+GET {{baseUrl}}/api/weather/Tokyo
+
+### Test weather endpoint - Paris
+GET {{baseUrl}}/api/weather/Paris
+
+### Test weather endpoint - Sydney
+GET {{baseUrl}}/api/weather/Sydney
+
+### Test forecast endpoint - London
+GET {{baseUrl}}/api/forecast/London
+
+### Test forecast endpoint - Mumbai
+GET {{baseUrl}}/api/forecast/Mumbai
+
+### Test search history
+GET {{baseUrl}}/api/history
+
+### Test popular cities
+GET {{baseUrl}}/api/popular
+
+### Test invalid city (should return error)
+GET {{baseUrl}}/api/weather/InvalidCityName123
+
+### Test empty city name (should return error)
+GET {{baseUrl}}/api/weather/
+
+### Test forecast for invalid city
+GET {{baseUrl}}/api/forecast/InvalidCityName123
